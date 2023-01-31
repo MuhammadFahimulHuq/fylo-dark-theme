@@ -1,0 +1,353 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 14px;
+  background-color: hsl(218deg, 28%, 13%);
+  color: hsl(0deg, 0%, 100%);
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+}
+body a {
+  text-decoration: none;
+  color: hsl(0deg, 0%, 100%);
+  font-family: "Raleway", sans-serif;
+}
+body header {
+  padding: 2em 1em;
+}
+body main {
+  padding: 0em 1em;
+}
+body footer {
+  padding: 0em 3em;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+nav .header {
+  width: 15rem;
+}
+nav .navigation-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5em;
+  align-self: center;
+  font-size: 1.2rem;
+}
+
+section {
+  margin: 4em 0em 10em 0em;
+}
+
+.hero-container .hero-image {
+  width: clamp(30rem, 100%, 80rem);
+}
+.hero-container h1 {
+  letter-spacing: 0.08em;
+  line-height: 1.5em;
+  font-family: "Raleway", sans-serif;
+  margin: 1em 0em;
+  font-size: clamp(2.4rem, 3.5vw, 4.2rem);
+}
+.hero-container p {
+  width: 85%;
+  margin: auto;
+  line-height: 1.8em;
+  margin-bottom: 3em;
+}
+.hero-container a {
+  background: rgb(101, 226, 217);
+  background: linear-gradient(27deg, rgb(101, 226, 217) 0%, rgb(51, 158, 204) 30%);
+  padding: 1em 6em;
+  border-radius: 3em;
+  font-weight: 700;
+}
+
+.content-section .container {
+  margin-bottom: 5em;
+}
+.content-section .container img {
+  width: 10rem;
+  aspect-ratio: 1/1;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin: 2em 0em;
+}
+.content-section .container h2 {
+  font-weight: 700;
+  font-size: 1.8rem;
+  font-family: "Raleway", sans-serif;
+}
+.content-section .container p {
+  width: 90%;
+  margin: 1em auto auto auto;
+}
+
+.productive-section {
+  text-align: left;
+}
+.productive-section .container {
+  padding: 0em 1em;
+}
+.productive-section img {
+  width: 90%;
+}
+.productive-section h2 {
+  font-size: 1.7rem;
+  letter-spacing: 0.04em;
+  font-weight: 600;
+  margin: 1em auto;
+  text-align: left;
+  font-family: "Raleway", sans-serif;
+}
+.productive-section p {
+  text-align: left;
+  margin: auto auto 1em auto;
+  line-height: 1.5em;
+}
+.productive-section a {
+  color: rgb(101, 226, 217);
+  border-bottom: 1px solid rgb(101, 226, 217);
+  padding-bottom: 0.5em;
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  align-items: center;
+  justify-content: center;
+}
+.productive-section a img {
+  width: 20px;
+  margin-left: 0.5em;
+}
+
+.testimonials-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 2em;
+  justify-items: center;
+  text-align: left;
+}
+.testimonials-container .card {
+  background-color: hsl(219deg, 30%, 18%);
+  width: 90%;
+  padding: 2em 1em;
+  border-radius: 0.2em;
+}
+.testimonials-container .card p {
+  font-size: clamp(1.2rem, 1.5vw, 1.8rem);
+  line-height: 1.8em;
+}
+.testimonials-container .detail {
+  margin-top: 1em;
+  display: grid;
+  grid-template-columns: 2.5em auto;
+  grid-template-rows: 1em 1em;
+  grid-template-areas: "profile-image name" "profile-image occupation";
+  gap: 8px;
+  align-items: center;
+}
+.testimonials-container .detail img {
+  border-radius: 50%;
+  width: 30px;
+  grid-area: profile-image;
+}
+.testimonials-container .detail h3 {
+  grid-area: name;
+  font-size: 1.4rem;
+  letter-spacing: 0.1em;
+}
+.testimonials-container .detail p {
+  grid-area: occupation;
+  font-size: 1.1rem;
+  color: rgb(224, 224, 224);
+  letter-spacing: 0.1em;
+}
+
+.contact-container .card {
+  background-color: hsl(217deg, 28%, 15%);
+  padding: 3em 1em;
+  border-radius: 1em;
+}
+.contact-container .card h2 {
+  font-weight: 700;
+  margin-bottom: 1em;
+}
+.contact-container .card p {
+  line-height: 1.5em;
+  font-size: 1.5rem;
+  letter-spacing: 0.03em;
+  margin-bottom: 1em;
+}
+.contact-container .card form {
+  display: flex;
+  flex-direction: column;
+}
+.contact-container .card form input, .contact-container .card form button {
+  padding: 1em 2.5em;
+  border-radius: 2em;
+  margin: 1em;
+  border: 0px;
+}
+.contact-container .card form button {
+  background: rgb(101, 226, 217);
+  background: linear-gradient(27deg, rgb(101, 226, 217) 0%, rgb(51, 158, 204) 30%);
+  color: white;
+  font-weight: 700;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.1em;
+}
+.contact-container .card form input {
+  color: rgb(204, 204, 204);
+}
+
+footer {
+  background-color: hsl(216deg, 53%, 9%);
+  width: 100%;
+  text-align: left;
+}
+footer .logo {
+  margin-top: 20em;
+  margin-bottom: 3em;
+}
+footer .container {
+  display: grid;
+  grid-template-columns: 2em 1fr;
+  margin-bottom: 2em;
+}
+footer .container i {
+  padding-top: 5px;
+}
+footer .container p {
+  font-size: 1.5rem;
+}
+footer .footer-nav {
+  margin-top: 6em;
+  margin-bottom: 3em;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+footer .privacy-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  margin: 2em 0em;
+}
+footer .social-container {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  margin: 5em 0em;
+}
+footer .social-container a {
+  border: 1px solid white;
+  padding: 0.5em;
+  border-radius: 50%;
+}
+footer .social-container a i {
+  width: 1em;
+  text-align: center;
+}
+
+@media (min-width: 700px) {
+  body {
+    font-size: 18px;
+  }
+  body a {
+    font-size: 18px;
+  }
+  header, main {
+    width: 80%;
+    margin: auto;
+  }
+  nav .navigation-container {
+    gap: 5em;
+  }
+  .hero-container h1 {
+    letter-spacing: normal;
+  }
+  .hero-container .hero-text-container {
+    width: clamp(50rem, 60vw, 90rem);
+    margin: auto;
+  }
+  .hero-container .hero-text-container p {
+    width: 55rem;
+    margin: 0em auto 2em auto;
+  }
+  .content-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .content-section .container img {
+    margin: 0em;
+  }
+  .content-section .container h2 {
+    margin-top: 1.5em;
+    font-size: 2.4rem;
+  }
+  .content-section .container p {
+    width: 40rem;
+    font-size: 1.6rem;
+  }
+  .productive-section {
+    display: flex;
+  }
+  .productive-section .container {
+    margin-top: 7.5em;
+  }
+  .productive-section .container h2 {
+    font-size: 4.2rem;
+    width: 40rem;
+    margin: 0.5em 0rem;
+  }
+  .testimonials-container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    gap: 3em;
+    margin-bottom: 10rem;
+    padding-bottom: 20rem;
+  }
+  .testimonials-container .card {
+    padding: 3em 2em 2em 2em;
+    width: 100%;
+  }
+  .testimonials-container .detail {
+    gap: 8px;
+  }
+  .testimonials-container .detail h3 {
+    margin-top: 0.5em;
+  }
+  .contact-container .card {
+    width: 100rem;
+    position: absolute;
+    z-index: 1000;
+    left: 25%;
+  }
+  footer {
+    margin-top: 20em;
+  }
+  footer .wrapper {
+    display: grid;
+    grid-template-columns: 2.5fr 0.5fr 0.5fr 0.5fr;
+  }
+  footer .company-detail {
+    display: flex;
+  }
+  footer .container p {
+    width: 30rem;
+  }
+}/*# sourceMappingURL=index.css.map */
