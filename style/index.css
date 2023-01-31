@@ -350,4 +350,13 @@ footer .social-container a i {
   footer .container p {
     width: 30rem;
   }
+  footer .footer-nav {
+    margin-top: 0em;
+  }
+  footer .privacy-container {
+    margin-top: 0em;
+  }
+  .social-container {
+    margin: 0em !important;
+  }
 }/*# sourceMappingURL=index.css.map */
